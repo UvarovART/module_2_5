@@ -5,8 +5,8 @@ def calculate_structure_sum(data_structure):
             sum += calculate_structure_sum(key)
             sum += calculate_structure_sum(value)
     elif isinstance(data_structure, (list, tuple, set)):
-        for item in data_structure:
-            sum += calculate_structure_sum(item)
+        for i in data_structure:
+            sum += calculate_structure_sum(i)
     elif isinstance(data_structure, (int, float)):
         sum += data_structure
     elif isinstance(data_structure, str):
