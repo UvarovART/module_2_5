@@ -6,3 +6,6 @@ def test_function():
 
 
 test_function()
+
+
+#inner_function() ошибка имени: имя 'inner_function' не найдено. 
